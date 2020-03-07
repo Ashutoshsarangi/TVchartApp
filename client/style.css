@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+}
+
+#containerDiv {
+  background: #000;
+  padding: 3px;
+  position: fixed;
+  bottom: 10%;
+  width: 100%;
+}
+
+#containerDiv input {
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-right: .5%;
+}
+
+#containerDiv button {
+  width: 9%;
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+.video{
+  width:420px;
+  height:345px;
+}
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+
+@media only screen and (max-width: 600px) {
+  .video{
+    width:420px;
+    height:500px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .video{
+    width:1050px;
+    height:550px;
+  }
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  position: fixed;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  background-color: #c0c0c0;
+  bottom:0;
+  width: 300px;
+  height: 100px;
+  z-index:100;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+  width: 300px;
+  right: 0;
+}
+.Customtab{
+  position: absolute;
+  bottom: 0;
+}
